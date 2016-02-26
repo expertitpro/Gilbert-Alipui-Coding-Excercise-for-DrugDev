@@ -74,6 +74,7 @@ Ext.application({
                                             padding: '2',
                                             emptyText: 'Enter the message you wish to encrypt'
                                     },{
+                                           xtype: 'numberfield',
                                             name: 'shift',
                                             id: 'shift',
                                             padding: '2',

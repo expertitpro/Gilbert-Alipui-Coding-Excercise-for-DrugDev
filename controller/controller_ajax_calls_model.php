@@ -1,9 +1,6 @@
 <?php
 //this file is controller_ajax_calls_model.php.  It is called by view.html.  It in turn calls model.php
 
-//print_r($_GET);
-
-
 class CalculateEarnings {
     
 
@@ -22,20 +19,13 @@ class CalculateEarnings {
 		$pieces1 = explode("%3D", $pieces[1]);  // split up to remove extra encoding %3D
 		
 		$value = $pieces1[0];  // the value
-		
-		//print_r($pieces);
-		//exit;
-		
-		//$shift = substr($pieces[1], -1);  // the shift
-		$shift = $pieces[2];
-
-		//include the controller class file
-		//this include file could also have a .inc extension 
+		$shift = $pieces[2];   // the shift
 		
 		$pvalue = urldecode($pvalue);
-		//$pvalue = preg_replace("/([\\x00-\\x20\\x7f-\\xff{$reserved}])/e", "_", $pvalue);   //TODO REPLACE THE %20
-		$pvalue = preg_replace("/([\\x00-\\x20])/e", "_", $pvalue);
+		//$pvalue = preg_replace("/([\\x00-\\x20])/e", "_", $pvalue);
 		
+		//the algorithm for the doCaeser method was adapted from:
+		//http://www.xarg.org/2010/05/cracking-a-caesar-cipher/ 
 		function doCaesar($pvalue, $pshift) {
 		   
 		   $str = $pvalue;   //"String to loop through";
@@ -51,7 +41,6 @@ class CalculateEarnings {
 				   $ret.= $str[$i];
 			   }
 		   }
-
 		 echo urldecode($ret);	
 		}
 
@@ -65,18 +54,16 @@ class CalculateEarnings {
 		{
 			if(!"GET")
 			{
-			  // do nothing. prevents caling the controller prematurely leading to division by zero!
+			  // do nothing. prevents caling the controller prematurely, which could in some cases lead to division by zero!
 			  return 1;	
 			}else{
 			 // ensure the controller is only called on GET
 			 doCaesar($value, $shift );
 			}   
 		}	
+		return 0;
 		
-  		//echo '{module:getaverage,success:true}';
-  		return 0;
-		
-     } //end getAverage method
+     } //end callCaesar method
 
 } // end controller class
 
