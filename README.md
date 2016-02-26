@@ -26,7 +26,7 @@ Naturally, I am open to working with Ruby on Rails, so it would be interesting t
 
 <b>My Solution Methodology:</b>
 
-I researched the Caesar cipher algorithm.  I attempted to complete it, but ran out of time getting my solution to function properly, and eventually ran out of time so I adapted the Caesar cipher algorithm from: http://www.xarg.org/2010/05/cracking-a-caesar-cipher/ 
+I researched the Caesar cipher algorithm.  I attempted to complete it and eventually ran out of time so I adapted the Caesar cipher algorithm from: http://www.xarg.org/2010/05/cracking-a-caesar-cipher/.
 
 <b>Solution API</b>
 
