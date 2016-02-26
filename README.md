@@ -1,12 +1,12 @@
-# Earnings Code Challenge
+# TrialNetwork DrugDev's coding exercise
 
 
-This is Gilbert Alipui's solution to TrialNetwork's codding exercise Thank you for granting me the opportunity to tackle this challenge.  I have enjoyed working so much that I created a second version.  
+This is Gilbert Alipui's solution to TrialNetwork's coding exercise Thank you for granting me the opportunity to tackle this challenge.  I have enjoyed working so much that I created a second version.  
 This version features a more polished front-end UI built with Extjs, and employs my own hand-coded MVC framework on the back-end.
 
 <b>How to View the Solution</b>
 
-To view my solution, clone off a copy, and after renaming the folder to remove my name, store the resulting <b>earnings_code_challenge</b> folder in your web root and enter this link into the browser's address bar:  http://localhost/earnings_code_challenge
+To view my solution, clone off a copy, and after renaming the folder to remove my name, store the resulting <b>Gilbert-Alipui-Coding-Excercise-for-DrugDev</b> folder in your web root and enter this link into the browser's address bar:  http://localhost/earnings_code_challenge
 
 <b>The Problem:</b>  
 
